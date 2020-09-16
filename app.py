@@ -33,8 +33,7 @@ def home():
         return render_template('index.html')
     else:
         if request.method == 'POST':
-            username = request.form['username']
-            return render_template('index.html', data=blogopen(username))
+            return render_template('index.html')
         return render_template('index.html')
 
 
